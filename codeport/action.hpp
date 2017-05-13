@@ -85,7 +85,7 @@ public:
 		while( currHandler )
 		{
 			action_handler_sub * theSub = dynamic_cast<action_handler_sub*>(&(*currHandler));
-			if( theSub )
+			if( theSub && theSub->canDoAction( theSub ) )
 			{
 				theSub->onAction( inEvent, theSub );
 				if( inEvent.handled() )

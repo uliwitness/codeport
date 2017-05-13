@@ -15,6 +15,7 @@
 		552056701EC73EEB0079AA9E /* action.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5520566F1EC73EEB0079AA9E /* action.mm */; };
 		552056731EC73FF70079AA9E /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552056711EC73FF70079AA9E /* event.cpp */; };
 		552056761EC7441E0079AA9E /* menu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 552056741EC7441E0079AA9E /* menu.mm */; };
+		553553DC1EC78FED00F7E524 /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 553553DB1EC78FED00F7E524 /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		552056721EC73FF70079AA9E /* event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = event.hpp; sourceTree = "<group>"; };
 		552056741EC7441E0079AA9E /* menu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = menu.mm; sourceTree = "<group>"; };
 		552056751EC7441E0079AA9E /* menu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = menu.hpp; sourceTree = "<group>"; };
+		553553DB1EC78FED00F7E524 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 		552056481EC7368F0079AA9E = {
 			isa = PBXGroup;
 			children = (
+				553553DB1EC78FED00F7E524 /* Readme.md */,
 				552056531EC736900079AA9E /* codeport */,
 				552056521EC736900079AA9E /* Products */,
 				5520566B1EC73AA70079AA9E /* Frameworks */,
@@ -163,6 +166,7 @@
 			files = (
 				552056731EC73FF70079AA9E /* event.cpp in Sources */,
 				552056701EC73EEB0079AA9E /* action.mm in Sources */,
+				553553DC1EC78FED00F7E524 /* Readme.md in Sources */,
 				5520566A1EC736C00079AA9E /* application.mm in Sources */,
 				552056761EC7441E0079AA9E /* menu.mm in Sources */,
 				552056591EC736900079AA9E /* main.cpp in Sources */,
@@ -317,6 +321,7 @@
 				552056671EC736900079AA9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

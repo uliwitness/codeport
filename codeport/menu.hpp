@@ -23,6 +23,13 @@ class menu : public std::enable_shared_from_this<menu>
 public:
 	static menu_ptr createMenu( const std::string& inTitle ) { return std::make_shared<menu>( inTitle ); }
 	
+	template<class action_handler_sub>
+	void	addActionWithTitle( const std::string& inName )
+	{
+		action_ptr theItem = action_for<action_handler_sub>::createAction( inName );
+		addAction( theItem );
+	}
+	
 	void		addAction( action_ptr inAction );
 	action_ptr	action_at( int idx );
 

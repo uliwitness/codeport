@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		552056561EC736900079AA9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 552056551EC736900079AA9E /* AppDelegate.m */; };
-		552056591EC736900079AA9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 552056581EC736900079AA9E /* main.m */; };
-		5520565C1EC736900079AA9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5520565B1EC736900079AA9E /* ViewController.m */; };
+		552056591EC736900079AA9E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552056581EC736900079AA9E /* main.cpp */; };
 		5520565E1EC736900079AA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5520565D1EC736900079AA9E /* Assets.xcassets */; };
 		552056611EC736900079AA9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5520565F1EC736900079AA9E /* Main.storyboard */; };
+		5520566A1EC736C00079AA9E /* application.mm in Sources */ = {isa = PBXBuildFile; fileRef = 552056691EC736C00079AA9E /* application.mm */; };
+		5520566D1EC73AA80079AA9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5520566C1EC73AA80079AA9E /* Cocoa.framework */; };
+		552056701EC73EEB0079AA9E /* action.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5520566F1EC73EEB0079AA9E /* action.mm */; };
+		552056731EC73FF70079AA9E /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552056711EC73FF70079AA9E /* event.cpp */; };
+		552056761EC7441E0079AA9E /* menu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 552056741EC7441E0079AA9E /* menu.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		552056511EC736900079AA9E /* codeport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codeport.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		552056541EC736900079AA9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		552056551EC736900079AA9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		552056581EC736900079AA9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5520565A1EC736900079AA9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5520565B1EC736900079AA9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		552056581EC736900079AA9E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5520565D1EC736900079AA9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		552056601EC736900079AA9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		552056621EC736900079AA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		552056681EC736C00079AA9E /* application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = application.hpp; sourceTree = "<group>"; };
+		552056691EC736C00079AA9E /* application.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = application.mm; sourceTree = "<group>"; };
+		5520566C1EC73AA80079AA9E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5520566E1EC73EEB0079AA9E /* action.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = action.hpp; sourceTree = "<group>"; };
+		5520566F1EC73EEB0079AA9E /* action.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = action.mm; sourceTree = "<group>"; };
+		552056711EC73FF70079AA9E /* event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = event.cpp; sourceTree = "<group>"; };
+		552056721EC73FF70079AA9E /* event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = event.hpp; sourceTree = "<group>"; };
+		552056741EC7441E0079AA9E /* menu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = menu.mm; sourceTree = "<group>"; };
+		552056751EC7441E0079AA9E /* menu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = menu.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5520566D1EC73AA80079AA9E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 			children = (
 				552056531EC736900079AA9E /* codeport */,
 				552056521EC736900079AA9E /* Products */,
+				5520566B1EC73AA70079AA9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,24 +66,28 @@
 		552056531EC736900079AA9E /* codeport */ = {
 			isa = PBXGroup;
 			children = (
-				552056541EC736900079AA9E /* AppDelegate.h */,
-				552056551EC736900079AA9E /* AppDelegate.m */,
-				5520565A1EC736900079AA9E /* ViewController.h */,
-				5520565B1EC736900079AA9E /* ViewController.m */,
+				552056581EC736900079AA9E /* main.cpp */,
+				552056681EC736C00079AA9E /* application.hpp */,
+				552056691EC736C00079AA9E /* application.mm */,
+				552056721EC73FF70079AA9E /* event.hpp */,
+				552056711EC73FF70079AA9E /* event.cpp */,
+				5520566E1EC73EEB0079AA9E /* action.hpp */,
+				5520566F1EC73EEB0079AA9E /* action.mm */,
+				552056751EC7441E0079AA9E /* menu.hpp */,
+				552056741EC7441E0079AA9E /* menu.mm */,
 				5520565D1EC736900079AA9E /* Assets.xcassets */,
 				5520565F1EC736900079AA9E /* Main.storyboard */,
 				552056621EC736900079AA9E /* Info.plist */,
-				552056571EC736900079AA9E /* Supporting Files */,
 			);
 			path = codeport;
 			sourceTree = "<group>";
 		};
-		552056571EC736900079AA9E /* Supporting Files */ = {
+		5520566B1EC73AA70079AA9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				552056581EC736900079AA9E /* main.m */,
+				5520566C1EC73AA80079AA9E /* Cocoa.framework */,
 			);
-			name = "Supporting Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5520565C1EC736900079AA9E /* ViewController.m in Sources */,
-				552056591EC736900079AA9E /* main.m in Sources */,
-				552056561EC736900079AA9E /* AppDelegate.m in Sources */,
+				552056731EC73FF70079AA9E /* event.cpp in Sources */,
+				552056701EC73EEB0079AA9E /* action.mm in Sources */,
+				5520566A1EC736C00079AA9E /* application.mm in Sources */,
+				552056761EC7441E0079AA9E /* menu.mm in Sources */,
+				552056591EC736900079AA9E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +189,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -221,7 +237,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
